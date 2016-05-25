@@ -6,10 +6,10 @@ const monthNames = {
 }
 module.exports = function (months, options) {
   // fix options
-  options = options ? options : { language:'en', zeroBased:false, connector:' - ' }
+  options = options ? options : { language:'en', zeroBased:false, connector:'-' }
   let language = options.language ? options.language : 'en'
   let zeroBased = options.zeroBased ? options.zeroBased : false
-  let connector = options.connector ? options.connector : ' - '
+  let connector = options.connector ? options.connector : '-'
 
   // default result
   let result = {
