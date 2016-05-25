@@ -1,0 +1,22 @@
+{
+  "name": "months2periods",
+  "version": "0.1.0",
+  "description": "Transforms an array of months into an an array of string expressing periods",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martianfield/months2periods.git"
+  },
+  "author": "Martin Imfeld <martin.imfeld@gmail.com> (http://martianfield.github.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martianfield/months2periods/issues"
+  },
+  "homepage": "https://github.com/martianfield/months2periods#readme",
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
+}
