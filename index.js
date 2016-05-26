@@ -2,14 +2,19 @@
 
 const monthNames = {
   en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-  de: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember']
+  de: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
+  fr: ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'],
+  it: ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'],
+  es: ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
 }
+
 module.exports = function (months, options) {
   // fix options
   options = options ? options : { language:'en', zeroBased:false, connector:'-' }
-  let language = options.language ? options.language : 'en'
   let zeroBased = options.zeroBased ? options.zeroBased : false
   let connector = options.connector ? options.connector : '-'
+  let language = options.language ? options.language : 'en'
+  language = monthNames.hasOwnProperty(language) ? language : 'en'
 
   // default result
   let result = {

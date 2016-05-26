@@ -101,7 +101,7 @@ describe('Periods', () => {
     // act
     let result = m2p(months, options)
     // assert
-    expect(result.periods).to.equal(["January-December"])
+    expect(result.periods).to.deep.equal(["January-December"])
   })
 
 })
