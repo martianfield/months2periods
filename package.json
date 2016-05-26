@@ -1,6 +1,6 @@
 {
   "name": "months2periods",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Transforms an array of months into an an array of string expressing periods",
   "main": "index.js",
   "scripts": {
